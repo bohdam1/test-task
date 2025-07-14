@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import  UserProfileForm  from "src/components/UserProfileForm/UserProfileForm";
+
 
 export default function Home() {
   const { t } = useTranslation();
@@ -21,10 +23,7 @@ export default function Home() {
           content="Frontend SSR template is used for bootstrapping a project."
         />
       </Head>
-      <button type="button" onClick={onClick}>
-        {t('click')}
-      </button>
-      <h1>Frontend SSR template</h1>
+      <UserProfileForm/>
     </div>
   );
 }
